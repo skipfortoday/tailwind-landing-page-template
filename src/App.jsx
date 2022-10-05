@@ -30,7 +30,7 @@ function App() {
 
   useEffect(() => {
     document.querySelector('html').style.scrollBehavior = 'auto'
-    window.scroll({ top: 0 })
+    window.scroll({ top: 0 }) // when router change always set top of pages
     document.querySelector('html').style.scrollBehavior = ''
   }, [location.pathname]); // triggered on route change
 
